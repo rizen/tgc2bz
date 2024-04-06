@@ -49,15 +49,7 @@ render(setup, {
             )
         });
 
-        game.all(Card).appearance({
-            aspectRatio: 775 / 1075,
-            render: ({ name }) => (
-                <div className="flipper">
-                    <div className="front" title={name}></div>
-                    <div className="back"></div>
-                </div>
-            ),
-        });
+        // card sizes
 
         game.all('hand', { mine: false }).appearance({ render: false });
 
